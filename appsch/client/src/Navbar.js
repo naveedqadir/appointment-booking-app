@@ -31,7 +31,7 @@ function Navbar({auth,setAuth}){
     
       const getSuggestions = async (value) => {
         try {
-          const response = await axios.get(`/search?q=${value}`);
+          const response = await axios.get(`https://backend-kfcd.onrender.com/search?q=${value}`);
           const doctors = response.data;
           const suggestions = doctors.map((doctor) => ({
             name: doctor.name,
