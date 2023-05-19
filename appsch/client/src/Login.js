@@ -23,7 +23,7 @@ function Login() {
         var email = document.getElementById("email").value;
         var password = document.getElementById("password").value;
         axios
-        .post("/login", {
+        .post("https://backend-kfcd.onrender.com/login", {
             email,password
         })
         .then((response) => {
