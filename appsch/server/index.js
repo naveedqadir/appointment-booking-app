@@ -25,7 +25,7 @@ const token = jwt.sign(payload, "RxpjTYdWYsoIfoLg4Po2WO47bmGmVyVeulfH");
 
 mongoose
   .connect(
-    "mongodb+srv://naveedqadir0:786allah@cluster0.o7ceddj.mongodb.net/appscheduling?retryWrites=true&w=majority",
+    ${process.env.MONGO_URL},
     {
       useNewUrlParser: true,
       useUnifiedTopology: true,
