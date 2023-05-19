@@ -19,7 +19,7 @@ function Book() {
 
   useEffect(() => {
     axios
-      .get("/dataload")
+      .get("https://backend-kfcd.onrender.com/dataload")
       .then((response) => {
         setDoctors(response.data);
       })
