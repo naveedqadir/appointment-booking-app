@@ -26,7 +26,7 @@ function Register() {
         var rpassword = document.getElementById("rpassword").value;
         if (password === rpassword){
         axios
-        .post("/register", {
+        .post("https://backend-kfcd.onrender.com/register", {
             email,password
         })
         .then((response) => {
