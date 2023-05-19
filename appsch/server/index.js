@@ -25,7 +25,7 @@ const token = jwt.sign(payload, "RxpjTYdWYsoIfoLg4Po2WO47bmGmVyVeulfH");
 
 mongoose
   .connect(
-    ${process.env.MONGO_URL},
+    process.env.MONGO_URL,
     {
       useNewUrlParser: true,
       useUnifiedTopology: true,
