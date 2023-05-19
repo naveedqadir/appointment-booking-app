@@ -34,7 +34,7 @@ function schedule(event){
     console.log(time)
     if (date){
     axios
-    .post("/check", {time,date,usname,
+    .post("https://backend-kfcd.onrender.com/check", {time,date,usname,
     })
     .then((response) => {
       console.log(response.data)
@@ -58,7 +58,7 @@ function schedule(event){
   useEffect(() => {
   const docinfo = async (value) => {
   try {
-    const response = await axios.get(`/search?q=${username}`);
+    const response = await axios.get(`https://backend-kfcd.onrender.com/search?q=${username}`);
     const doctors = response.data;
     const doc = doctors.map((doctor) => ({
       name: doctor.name,
