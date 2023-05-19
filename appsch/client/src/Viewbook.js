@@ -14,7 +14,7 @@ function Viewbook(){
     const [viewapp,setViewapp] = useState([]);
     useEffect(() => {
       axios
-        .get("/view_app",
+        .get("https://backend-kfcd.onrender.com/view_app",
         {
             headers: {
               'Content-Type': 'application/json',
