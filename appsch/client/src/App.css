@@ -1,0 +1,25 @@
+.App {
+  text-align: center;
+}
+.react-autosuggest__suggestions-list{
+  margin-top: 70%;
+  background-color: green;
+}
+.react-autosuggest__input{
+  z-index: 100;
+}
+.react-autosuggest__container{
+}
+.react-autosuggest__container--open{
+background-color: floralwhite;
+z-index: 99
+;
+}
+.react-autosuggest__suggestions-container{
+}
+.react-autosuggest__suggestion{
+  background-color: white;
+  margin-top: 4%;
+
+}
+
