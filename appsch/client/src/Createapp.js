@@ -19,7 +19,7 @@ function Createapp({ username, check, time, date }) {
     var patient_email = document.getElementById("patient_email").value;
     var patient_name = document.getElementById("patient_name").value;
     axios
-      .post("/bookslot", {
+      .post("https://backend-kfcd.onrender.com/bookslot", {
         time,
         date,
         username,
