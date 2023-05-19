@@ -22,7 +22,7 @@ function App() {
         console.log('User is not authenticated');
         return;
       }
-      const response = await fetch('/auth-endpoint', {
+      const response = await fetch('https://backend-kfcd.onrender.com/auth-endpoint', {
         headers: {
           Authorization: `Bearer ${authToken}`
         }
