@@ -82,9 +82,7 @@ const UserSchema = new mongoose.Schema({
 
 const User = mongoose.model("User", UserSchema);
 
-app.get('/health', (req, res) => {
-  res.status(200).json({ status: 'OK' });
-});
+
 
 app.get("/dataload", async (req, res) => {
   try {
