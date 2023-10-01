@@ -127,7 +127,7 @@ app.post("/check", async (req, res) => {
     // console.log(time[0].is_booked);
     res.send(time[0].is_booked);
   } catch (err) {
-    res.status(500).send("Server error");
+    res.status(406).send("Server error");
   }
 });
 
