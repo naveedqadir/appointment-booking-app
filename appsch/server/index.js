@@ -115,7 +115,7 @@ app.get("/view_app", auth, async (req, res) => {
 
 app.post("/check", async (req, res) => {
   const t = req.body.time;
-  const usn = req.body.usname.username;
+  const usn = req.body.usname;
   const date = req.body.date;
   // console.log(t, usn, date);
   try {
@@ -127,7 +127,7 @@ app.post("/check", async (req, res) => {
     // console.log(time[0].is_booked);
     res.send(time[0].is_booked);
   } catch (err) {
-    res.status(406).send("Server error");
+    res.status(500).send("Server error");
   }
 });
 
