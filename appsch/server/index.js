@@ -115,7 +115,7 @@ app.get("/view_app", auth, async (req, res) => {
 
 app.post("/check", async (req, res) => {
   const t = req.body.time;
-  const usn = req.body.usname;
+  const usn = req.body.usname.username;
   const date = req.body.date;
   // console.log(t, usn, date);
   try {
